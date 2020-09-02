@@ -1,0 +1,72 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.game-board{
+  margin: 20px;
+  display: inline-block;
+}
+
+.cell{
+  height: 100px;
+  width: 100px;
+  border: 1px solid #7d7d7d;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.row{
+  font-size: 0;
+}
+
+svg{
+  pointer-events: none;
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  animation: dash 2s linear 1;
+}
+
+.cross-path-1 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  animation: dash .5s linear 1;
+}
+
+.cross-path-2 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  animation: cross-dash 1s linear 1;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes cross-dash {
+  0%{
+    stroke-dashoffset: 1000;
+  }
+  
+  50%{
+    stroke-dashoffset: 1000;
+  }
+  
+  50%{
+    stroke-dashoffset: 1000;
+  }
+  
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
