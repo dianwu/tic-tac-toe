@@ -1,2 +1,2 @@
-# tic-toc-tic
-tic-toc-tic practice
+# tic-tac-toe
+tic-tac-toe practice
